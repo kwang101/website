@@ -11,7 +11,11 @@ def about():
 
 @app.route('/projects/')
 def projects():
-    return "Projects!"
+    return render_template('projects.html')
+
+@app.route('/posts/')
+def posts():
+	return render_template('posts.html')
     
 if __name__ == '__main__':
     app.run(debug=True)

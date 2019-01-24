@@ -39,7 +39,7 @@ div.home {
      -moz-border-radius: 6px;
           border-radius: 6px;
 }
-div.about {
+div.about, div.projects, div.posts {
   padding: 10px 0 30px 0;
   background-color: #E6E6FA;
   -webkit-border-radius: 6px;
