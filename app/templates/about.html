@@ -5,7 +5,41 @@
 	{% block content %}
 	   <div class="about">
 	     <h1>About me</h1>
-	     <p>This is a portfolio site about anything that can be put in a portfolio.</p>
+	     <img src="{{ url_for('static', filename='img/Picture.jpg') }}">
+	     <p>I'm Kathy, a computer science student at the University of British Columbia and a software developer. I'm currently going through my fourth year of studies!</p>
+	     <p>Here's my <a href="{{ url_for('static', filename='docs/Resume.pdf') }}" target="_blank">resume</a>.</p>
+	     <h3>Interests: volleyball, baking, dogs, anime</h3>
+	     <div>
+	     	<p>GitHub: <a href="https://github.com/kwang101" target="_blank">https://github.com/kwang101</a>, LinkedIn: <a href="https://www.linkedin.com/in/kathy-wang-660b13108" target="_blank">https://www.linkedin.com/in/kathy-wang-660b13108</a></p>
+	 	</div>
+	    <div>
+			<h3>Let's Connect</h3>
+			<center><p>Send me your questions, suggestions, tips, etc.</p></center>
+			<form>
+			  <fieldset>
+			    <div class="form-group row">
+			      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+			      <div class="col-sm-10">
+			        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+			      </div>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleInputEmail1">Email Address</label>
+			      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			      <small id="emailHelp" class="form-text text-muted">E.g. email@example.com</small>
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleSubject">Subject</label>
+			      <input type="password" class="form-control" id="exampleSubject">
+			    </div>
+			    <div class="form-group">
+			      <label for="exampleTextarea">Message</label>
+			      <textarea class="form-control" id="exampleTextarea" rows="4"></textarea>
+			    </div>
+			    <button type="submit" class="btn btn-primary">Submit</button>
+			  </fieldset>
+			</form>
+	 	</div>
 	   </div>
 	{% endblock %}
   </body>
