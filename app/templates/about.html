@@ -8,7 +8,7 @@
 	     <img src="{{ url_for('static', filename='img/Picture.jpg') }}">
 	     <p>I'm Kathy, a computer science student at the University of British Columbia and a software developer. I'm currently going through my fourth year of studies!</p>
 	     <p>Here's my <a href="{{ url_for('static', filename='docs/Resume.pdf') }}" target="_blank">resume</a>.</p>
-	     <h3>Interests: volleyball, baking, dogs, anime</h3>
+	     <h3>Interests:</h3> <p>volleyball, baking, dogs, anime</p>
 	     <div>
 	     	<p>GitHub: <a href="https://github.com/kwang101" target="_blank">https://github.com/kwang101</a>, LinkedIn: <a href="https://www.linkedin.com/in/kathy-wang-660b13108" target="_blank">https://www.linkedin.com/in/kathy-wang-660b13108</a></p>
 	 	</div>
@@ -17,11 +17,10 @@
 			<center><p>Send me your questions, suggestions, tips, etc.</p></center>
 			<form>
 			  <fieldset>
-			    <div class="form-group row">
-			      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-			      <div class="col-sm-10">
-			        <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com">
-			      </div>
+			    <div class="form-group">
+			      <label for="exampleName">Name</label>
+			      <input type="fn" class="form-control" id="exampleName" aria-describedby="nameHelp" placeholder="Enter Full Name">
+			      <small id="nameHelp" class="form-text text-muted">E.g. Kathy Wang</small>
 			    </div>
 			    <div class="form-group">
 			      <label for="exampleInputEmail1">Email Address</label>
