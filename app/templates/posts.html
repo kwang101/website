@@ -3,7 +3,7 @@
   <body>
   	{% extends "layout.html" %}
 	{% block content %}
-	   <div class="posts">
+	   <div class="posts" style="margin-top: 50px;">
 	     <h1>Posts</h1>
 	     <p>This is where I share interesting posts ranging from puppies to tech news.</p>
 	     <form class="form-inline my-2 my-lg-0">
@@ -11,62 +11,52 @@
             <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
           </form>
 	   </div>
+	   <br>
+	   <div class="posts_content">
+		<div class="card mb-3" style="max-width: 400px;">
+			  <h3 class="card-header">Jonas Brothers Reunion</h3>
+		  <div class="card-body">
+		    <h5 class="card-title">The Jonas Brothers are officially back!</h5>
+		    <h6 class="card-subtitle text-muted">The band is back together and they're about to drop a new song</h6>
+		  </div>
+		  <center>
+		  	<img style="height: 200px; width: 350px; display: block;" src="{{ url_for('static', filename='img/Jonas-Brothers.jpg') }}" alt="Card image">
+		  </center>
+		  <div class="card-body">
+		    <p class="card-text">
+		    	As a millenial I grew up with the boy band that was formed in 2005, The Jonas Brothers and I recall some of their biggest hits like Burning Up and S.O.S. being part of my "favourites" playlists my ipod nano. At last, they're back and their music video is I-CON-IC. It is clear that they've grown into such masculine and charistmatic men, and they're all with beautiful and talented wives (Joe and Sophie are engaged so they're pretty much married in my eyes). Checkout their music video and/or read more about their new release on this celebrity news post.
+			</p>
+		  </div>
+		  <div class="card-body">
+		    <a href="https://www.youtube.com/watch?v=CnAmeh0-E-U" class="card-link">Music Video</a>
+		    <a href="https://www.mirror.co.uk/3am/celebrity-news/jonas-brothers-officially-back-together-14068426" class="card-link">Mirror Post</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Posted: 03/04/2019
+		  </div>
+		</div>
 
-	   <div class="card border-primary mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
+		<div class="card mb-3" style="max-width: 400px;">
+			  <h3 class="card-header">SpaceX Launch</h3>
 		  <div class="card-body">
-		    <h4 class="card-title">Primary card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		    <h5 class="card-title">Rocket Launch: NET March 2019</h5>
+		    <h6 class="card-subtitle text-muted">SpaceX Falcon Heavy Arabsat 6A</h6>
+		  </div>
+		  <center>
+		  	<img style="height: 200px; width: 350px; display: block;" src="{{ url_for('static', filename='img/SpaceX-Launch2019.jpg') }}" alt="Card image">
+		  </center>
+		  <div class="card-body">
+		    <p class="card-text">
+		    	As an ex-Tesla Software Engineer Intern, I'm always interested in news regarding the brother/sister companies that Elon Musk is managing. A SpaceX Falcon Heavy rocket will launch the Arabsat 6A communications satellite, built by Lockheed Martin, from Kennedy Space Center. The satellite will deliver television, internet and mobile phone services to the Middle East, Africa and Europe. Arabsat-6A is part of the two-satellite Arabsat-6G program for Arabsat.
+			</p>
+		  </div>
+		  <div class="card-body">
+		    <a href="https://www.kennedyspacecenter.com/launches-and-events/events-calendar/2019/march/rocket-launch-spacex-falcon-heavy-arabsat-6a" class="card-link">Kennedy Space Center Post</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Posted: 03/04/2019
 		  </div>
 		</div>
-		<div class="card border-secondary mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Secondary card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		</div>
-		<div class="card border-success mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Success card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		</div>
-		<div class="card border-danger mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Danger card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		</div>
-		<div class="card border-warning mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Warning card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		</div>
-		<div class="card border-info mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Info card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		</div>
-		<div class="card border-light mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Light card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
-		</div>
-		<div class="card border-dark mb-3" style="max-width: 20rem;">
-		  <div class="card-header">Header</div>
-		  <div class="card-body">
-		    <h4 class="card-title">Dark card title</h4>
-		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-		  </div>
 		</div>
 
 		<div>

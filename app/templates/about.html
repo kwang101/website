@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<link href="{{ url_for('static', filename='fontawesome/css/all.css') }}" rel="stylesheet"> <!--load all styles -->
+	</head>
   <body>
 	{% extends "layout.html" %}
 	{% block content %}
 	   <div class="about">
-	     <h1>About me</h1>
-	     <img src="{{ url_for('static', filename='img/Picture.jpg') }}">
-	     <p>I'm Kathy, a computer science student at the University of British Columbia and a software developer. I'm currently going through my fourth year of studies!</p>
-	     <p>Here's my <a href="{{ url_for('static', filename='docs/Resume.pdf') }}" target="_blank">resume</a>.</p>
-	     <h3>Interests:</h3> <p>volleyball, baking, dogs, anime</p>
-	     <div>
-	     	<p>GitHub: <a href="https://github.com/kwang101" target="_blank">https://github.com/kwang101</a>, LinkedIn: <a href="https://www.linkedin.com/in/kathy-wang-660b13108" target="_blank">https://www.linkedin.com/in/kathy-wang-660b13108</a></p>
-	 	</div>
-	    <div>
+	     <div class="intro jumbotron" style="margin-top: 50px; padding: 30px;">
+	     	<h1>About me</h1>
+	     	<img style="float: left; width= 50%;" src="{{ url_for('static', filename='img/Picture.jpg') }}">
+		     <div class="intro_container" style="padding-left: 370px;">
+		     	<h4>Facts:</h4>
+		     	I'm Kathy, a computer science student at the University of British Columbia and a software developer. I'm currently going through my fourth year of studies!
+		     	<br>
+		     	<br>
+		     	<p>Here's my <a href="{{ url_for('static', filename='docs/Resume.pdf') }}" target="_blank">resume</a>.</p>
+		     	<h4>Interests:</h4>
+			     <p>volleyball, baking, dogs, anime</p>
+			     <div>
+			     	<i class=" fab fa-github-square"></i>
+			     	<p>GitHub: <a href="https://github.com/kwang101" target="_blank">https://github.com/kwang101</a>, LinkedIn: <a href="https://www.linkedin.com/in/kathy-wang-660b13108" target="_blank">https://www.linkedin.com/in/kathy-wang-660b13108</a></p>
+			     	<img src="{{ url_for('static', filename='img/logo.png') }}">
+			 	</div>
+		     </div>
+	     </div>
+	 	<hr class="my-4">
+	    <div class="contact" style="width=100%;">
 			<h3>Let's Connect</h3>
 			<center><p>Send me your questions, suggestions, tips, etc.</p></center>
 			<form>
